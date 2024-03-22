@@ -137,7 +137,7 @@ def gen_interp_video(G, mp4: str, ws, w_frames=60*4, kind='cubic', grid_dims=(1,
         grid.append(row)
 
     # Render video.
-    max_batch = 10000000
+    max_batch = 100000
     voxel_resolution = 512
     video_out = imageio.get_writer(mp4, mode='I', fps=60, codec='libx264', **video_kwargs)
 
